@@ -1,6 +1,8 @@
 require 'calendar'
 
 class CalendarsController < ApplicationController
+  layout "calendar"
+
   def show
     calendar
   end

@@ -1,7 +1,0 @@
-<h1>New event</h1>
-
-<%= form_for @event do |f| %>
-  <%= f.text_field :name %>
-  <%= f.hidden_field :ocurrs_on, value: params[:date] %>
-  <%= f.submit %>
-<%- end %>

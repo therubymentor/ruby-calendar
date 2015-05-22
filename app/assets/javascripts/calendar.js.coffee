@@ -1,4 +1,4 @@
 $(document).ready ->
   $(".day.today, .day.future").on "click", ->
-    date = $(this).data("date")
-    window.location.href="/events/new?date=#{date}"
+    $("#event_ocurrs_on").val($(this).data("date"))
+    $("#new_event_modal").modal('show')

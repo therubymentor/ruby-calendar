@@ -1,0 +1,5 @@
+<%= form_for @event||Event.new do |f| %>
+  <%= f.text_field :name %>
+  <%= f.hidden_field :ocurrs_on %>
+  <%= f.submit %>
+<%- end %>
